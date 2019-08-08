@@ -22,7 +22,7 @@ export default class CaraokeView extends HTMLElement {
                 text-shadow: 0 0 0.05em white;
                 transition: color 1s;
                 font-size: 5em;
-                font-family: "Source Han Serif";
+                font-family: caraoke-custom-font, "Source Han Serif";
                 font-weight: 900;
             }
             #drawer > #pointer ~ * {
