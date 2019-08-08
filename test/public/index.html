@@ -10,7 +10,7 @@
     <audio src="https://localhost/example.music" id="mediaPlayer" controls></audio>
     <script type="module">
         import Caraoke from "/dist/caraoke.js";
-        const c = new Caraoke({audio:mediaPlayer,container:document.body});
+        const c = new Caraoke({container:document.body});
         c.setLyric(JSON.parse(`MusicLyric.as.LyricItem[]`));
         mediaPlayer.addEventListener("timeupdate",()=>c.render(mediaPlayer.currentTime))
 </script>

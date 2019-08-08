@@ -10,7 +10,6 @@ import CaraokeView from "./view.js";
  *  An alternative karaoke presentation module.
  */
 export default class Caraoke {
-    private audioNode: HTMLMediaElement;
     private container: HTMLElement;
     private lyric: LyricItem[];
     private view: CaraokeView;
@@ -20,7 +19,6 @@ export default class Caraoke {
     }
     constructor(defaultOptions: Option) {
         defaultOptions.lyric && (this.lyric = defaultOptions.lyric);
-        this.audioNode = defaultOptions.audio;
         this.container = defaultOptions.container;
         CaraokeView.install()
         this.view = new CaraokeView;

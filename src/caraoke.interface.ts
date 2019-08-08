@@ -1,5 +1,4 @@
 export interface Option {
-    audio: HTMLMediaElement;
     container: HTMLElement;
     lyric?: LyricItem[];
 }

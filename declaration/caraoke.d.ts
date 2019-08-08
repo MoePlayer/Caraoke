@@ -1,6 +1,5 @@
 import { Option, LyricItem } from "./caraoke.interface.js";
 export default class Caraoke {
-    private audioNode;
     private container;
     private lyric;
     private view;

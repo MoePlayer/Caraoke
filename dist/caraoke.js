@@ -3,7 +3,6 @@ import CaraokeView from "./view.js";
 export default class Caraoke {
     constructor(defaultOptions) {
         defaultOptions.lyric && (this.lyric = defaultOptions.lyric);
-        this.audioNode = defaultOptions.audio;
         this.container = defaultOptions.container;
         CaraokeView.install();
         this.view = new CaraokeView;
