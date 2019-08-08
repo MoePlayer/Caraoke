@@ -26,7 +26,7 @@ export default class CaraokeView extends HTMLElement {
             #drawer > * {
                 color: red;
                 text-shadow: 0 0 0.05em white;
-                transition: color 1s;
+                transition: color .1s;
                 font-size: 5em;
                 font-family: caraoke-custom-font, "Source Han Serif","STZhongSong","Yu Mincho", serif;
                 font-weight: 900;
