@@ -19,15 +19,15 @@ export default class CaraokeView extends HTMLElement {
             }
             #drawer > * {
                 color: red;
-                text-shadow: 0 0 0.05em white;
-                transition: color .1s;
+                text-shadow: 0 0 0.1em red;
+                transition: color .5s;
                 font-size: 5em;
                 font-family: caraoke-custom-font, "Source Han Serif","STZhongSong","Yu Mincho", serif;
                 font-weight: 900;
             }
             #drawer > #pointer ~ * {
                 color: white;
-                text-shadow: 0 0 0.05em grey;
+                text-shadow: 0 0 0.1em grey;
             }
         `);
         this.shadow.appendChild(this.drawer);
