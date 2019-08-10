@@ -1,14 +1,15 @@
 {
   "name": "caraoke",
-  "version": "0.0.1",
+  "version": "1.0.0-76e0bc29-5902-4e4f-9829-710de3adb2a5",
   "description": "Caraoke music lyrics",
-  "main": "dist/caraoke.js",
-  "types": "declaration/caraoke.d.ts",
+  "module": "dist/caraoke.js",
+  "typings": "declaration/caraoke.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc",
     "serve": "node test/server.js"
   },
+  "sideEffects": false,
   "keywords": [
     "caraoke"
   ],
