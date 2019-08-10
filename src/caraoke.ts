@@ -4,7 +4,7 @@ import CaraokeView from "./view.js";
 /**
  * Module `Caraoke` 
  * // Author [`Corps`](https://github.com/Copay)
- * // License `MIT`
+ * // License `WTFPL`
  * 
  * -------
  *  An alternative karaoke presentation module.
