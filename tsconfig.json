@@ -7,7 +7,7 @@
         "preserveConstEnums": true,
         "declaration": true,
         "declarationDir": "declaration",
-        "sourceMap": true,
+        "sourceMap": false,
         "outDir": "dist"
     },
     "include": [
