@@ -1,4 +1,6 @@
 # Caraoke
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FCopay%2FCaraoke.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FCopay%2FCaraoke?ref=badge_shield)
+
 
 很高兴再一次发行仓库，这是我的礼物送给大家。
 
@@ -36,3 +38,5 @@ as the name is changed.
 
  0. You just DO WHAT THE FUCK YOU WANT TO.
  ```
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FCopay%2FCaraoke.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FCopay%2FCaraoke?ref=badge_large)
