@@ -1,14 +1,30 @@
-# Caraoke
+# Caraoke - Karaoke Version
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FCopay%2FCaraoke.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FCopay%2FCaraoke?ref=badge_shield)
 
 
-很高兴再一次发行仓库，这是我的礼物送给大家。
+>很高兴再一次发行仓库，这是我的礼物送给大家。
+>
+>这个模块利用 typescript 构建，没有任何矫揉造作的封装整合之类，你可以通过es6 module的引入方法引入.
+>
+>我曾尝试过 webpack 然苦其良久，于是这个库并没有执行。
+>
+>这个库是我很久之前的愿望，终于得以实现。虽然不长，但是能用。
 
-这个模块利用 typescript 构建，没有任何矫揉造作的封装整合之类，你可以通过es6 module的引入方法引入.
+The content above is just some gossip by the author. 
 
-我曾尝试过 webpack 然苦其良久，于是这个库并没有执行。
+----------
 
-这个库是我很久之前的愿望，终于得以实现。虽然不长，但是能用。
+我有一个愿望，就是让他更加完美。就像那些真正的卡拉 OK 一样。
+
+> I once have a dream that there should be a true karaoke player, just like the true ones do.
+
+那么我将维护一个类播放器元素，你全凭他的样子使用他。
+
+> So a player-alike karaoke element will be maintained, which is self-documented.
+
+只有 released 版本可用！
+
+> The code of the branch isn't always available, for which you should only use the version newly released.
 
 ## Usage
 
