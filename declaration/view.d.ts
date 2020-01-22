@@ -3,10 +3,10 @@ export default class CaraokeView extends HTMLElement {
     private lyricNodes;
     private shadow;
     private drawer;
-    private pointer;
+    private backgroundDrawer;
     static install(): void;
     constructor();
-    setNode(node: LyricNode): this;
+    setNode(node: LyricNode, percentage: number): this;
     private _setNode;
     setLyric(lyric: LyricItem): this;
     private _setLyric;

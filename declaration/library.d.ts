@@ -3,4 +3,5 @@ export declare function checkIfTimePointIsOfTheObject(time: number, obj: LyricIt
     node: LyricNode;
     item: LyricItem;
 }): 0 | 1 | -1;
+export declare function findPercentage(node: LyricNode, item: LyricItem, time: number): number;
 export declare function DivisionSearch<T>(checker: (el: T) => number, arr: T[]): T | null;

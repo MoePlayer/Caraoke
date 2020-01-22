@@ -1,5 +1,5 @@
 import { Option, LyricItem, LyricNode } from "./caraoke.interface.js";
-import { checkIfTimePointIsOfTheObject, DivisionSearch } from "./library.js";
+import { checkIfTimePointIsOfTheObject, DivisionSearch, findPercentage } from "./library.js";
 import CaraokeView from "./view.js";
 /**
  * Module `Caraoke` 
@@ -38,9 +38,9 @@ export default class Caraoke {
         }
         let FoundLyricNode;
         if (this.now.item) FoundLyricNode = DivisionSearch((el) => checkIfTimePointIsOfTheObject(time, { node: el, item: this.now.item }), this.now.item.nodes);
-        if (FoundLyricNode !== this.now.node && FoundLyricNode) {
+        if (/*FoundLyricNode !== this.now.node &&*/ FoundLyricNode) {
             this.now.node = FoundLyricNode;
-            this.view.setNode(FoundLyricNode);
+            this.view.setNode(FoundLyricNode, findPercentage(FoundLyricNode, FoundLyricItem, time));
         }
     }
 }

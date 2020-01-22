@@ -11,6 +11,9 @@ export function checkIfTimePointIsOfTheObject(time, obj) {
         || !beforeEnd && 1
         || !afterStart && -1;
 }
+export function findPercentage(node, item, time) {
+    return (time - item.start - node.start) / (node.end - node.start);
+}
 export function DivisionSearch(checker, arr) {
     if (arr.length === 0)
         return null;

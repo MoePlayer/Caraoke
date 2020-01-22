@@ -27,6 +27,10 @@ export function checkIfTimePointIsOfTheObject(
         || !afterStart && -1;
 }
 
+export function findPercentage(node: LyricNode, item: LyricItem, time: number) {
+    return (time - item.start - node.start) / (node.end - node.start);
+}
+
 export function DivisionSearch<T>(
     checker: (el: T) => number,
     arr: T[]): T | null {
