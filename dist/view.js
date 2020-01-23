@@ -19,6 +19,13 @@ export default class CaraokeView extends HTMLElement {
             }
             #drawer {
                 position: absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+            }
+            #container {
+                position: relative;
             }
             #backgroundDrawer > *, #drawer > * {
                 color: red;
@@ -34,8 +41,13 @@ export default class CaraokeView extends HTMLElement {
                 clip-path: none;
             }
         `);
-        this.shadow.appendChild(this.drawer);
-        this.shadow.appendChild(this.backgroundDrawer);
+        this.shadow.appendChild((() => {
+            let div = document.createElement("div");
+            div.id = "container";
+            div.appendChild(this.drawer);
+            div.appendChild(this.backgroundDrawer);
+            return div;
+        })());
     }
     setNode(node, percentage) {
         let point = 0;

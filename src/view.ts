@@ -25,6 +25,13 @@ export default class CaraokeView extends HTMLElement {
             }
             #drawer {
                 position: absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+            }
+            #container {
+                position: relative;
             }
             #backgroundDrawer > *, #drawer > * {
                 color: red;
@@ -40,8 +47,13 @@ export default class CaraokeView extends HTMLElement {
                 clip-path: none;
             }
         `);
-        this.shadow.appendChild(this.drawer);
-        this.shadow.appendChild(this.backgroundDrawer);
+        this.shadow.appendChild((() => {
+            let div = document.createElement("div");
+            div.id = "container";
+            div.appendChild(this.drawer);
+            div.appendChild(this.backgroundDrawer);
+            return div
+        })());
     }
     public setNode(node: LyricNode, percentage: number) {
         let point = 0;
@@ -50,7 +62,7 @@ export default class CaraokeView extends HTMLElement {
         return this;
     }
     private _setNode(point: number, percentage: number) {
-        (point-1)>=0&&(this.shadow.getElementById("node_" + (point-1)).style["clipPath"] = "inset(0 0 0 0)");
+        (point - 1) >= 0 && (this.shadow.getElementById("node_" + (point - 1)).style["clipPath"] = "inset(0 0 0 0)");
         this.shadow.getElementById("node_" + point).style["clipPath"] = "inset(0 " + parseInt((1 - percentage) * 100 as any) + "% 0 0)";
     }
     public setLyric(lyric: LyricItem) {
