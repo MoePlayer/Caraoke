@@ -1,4 +1,4 @@
-![Header Image](https://files.catbox.moe/qg3h2b.png)
+![Header Image](https://files.catbox.moe/vt17ng.png)
 
 # Caraoke - Karaoke Version
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FCopay%2FCaraoke.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FCopay%2FCaraoke?ref=badge_shield)
